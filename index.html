@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volta pra mim Gabrielle</title>
+    <style>
+        body 
+         
+        {
+            background-color: #ffcccc; 
+            font-family: 'Times New Roman', serif; 
+            text-align: center;
+            padding: 20px;
+        }
+
+   
+    
+
+        #botao1, #botao2 {
+            background-color: #ff69b4; 
+            color: #fff; 
+            border: none;
+            padding: 15px 30px; 
+            font-size: 24px; 
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #botao2 {
+            position: fixed;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+
+           h1 {
+            color: #ff69b4;
+            background-color: white;
+            font-size: 30px;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 15px 30px;
+            width: auto;
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <h1> Volta Pra Mim Gabrielle </h1>
+
+    <button id="botao1">Sim</button>
+    <button id="botao2">Não</button>
+    <!--<img src="rato_pelado.png" style="left: 500px;" alt="rato pelado">
+    <!--<img src="belo_romantico.png" style="left: 500px;" alt="belo o romantico">
+    <!--<img src="imagem_fundo.png" alt="Background image">
+    <!-- <img src="Imagem_fundo2.png" alt="Background image2"> -->
+    
+
+    <script>
+        
+        function moverBotao2() {
+            const botao2 = document.getElementById("botao2");
+            const novaPosicaoTop = Math.random() * window.innerHeight; 
+            const novaPosicaoLeft = Math.random() * window.innerWidth; 
+
+            botao2.style.top = novaPosicaoTop + "px";
+            botao2.style.left = novaPosicaoLeft + "px";
+        }
+
+        
+        function exibirMensagem() {
+            alert("Ainda te amo minha morceguinha! <3");
+        }
+
+        
+        document.getElementById("botao2").addEventListener("mouseover", moverBotao2);
+        document.getElementById("botao1").addEventListener("click", exibirMensagem);
+    </script>
+</body>
+</html>
